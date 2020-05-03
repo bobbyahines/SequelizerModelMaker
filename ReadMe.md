@@ -1,4 +1,4 @@
-#SequelizerModelMaker
+# SequelizerModelMaker
 
 ## Quick Start
 Edit the included `make.sh` bash script's db variables to reflect your
