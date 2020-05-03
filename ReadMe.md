@@ -9,10 +9,10 @@ shell:
 ## Manual Build
 
 ### 1. Build the Dockerfile
-`docker build -f Dockerfile -t conflabs/modelmaker:latest .`
+`docker build -f Dockerfile -t bobbyahines/modelmaker:latest .`
 
 ### 2. Start the application
-`docker run -it --rm --name modelmaker -v $PWD:/srv conflabs/makemodels:latest bash`
+`docker run -it --rm --name modelmaker -v $PWD:/srv bobbyahines/modelmaker:latest bash`
 
 ### 3. Generate Models
 From inside the container, run this command while substituting the variables:
