@@ -24,7 +24,7 @@ sequelize-auto --host $db_host /
                --pass $db_pass /
                --dialect mysql /
                --output ./Models /
-               --camel /
+               --camel
 ```
 
 ### 4. Generate TypeScript Models
