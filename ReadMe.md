@@ -16,8 +16,27 @@ shell:
 
 ### 3. Generate Models
 From inside the container, run this command while substituting the variables:  
-`sequelize-auto --host $db_host --database $db_name --user $db_user --pass $db_pass --port $db_port --dialect mysql --output ./Models --camel`
+```
+sequelize-auto --host $db_host /
+               --port $db_port /
+               --database $db_name /
+               --user $db_user /
+               --pass $db_pass /
+               --dialect mysql /
+               --output ./Models /
+               --camel /
+```
 
 ### 4. Generate TypeScript Models
 From inside the container, run this command while substituting the variables:  
-`sequelize-auto --host $db_host --database $db_name --user $db_user --pass $db_pass --port $db_port --dialect mysql --output ./TypeScriptModels --camel -z`
+```
+sequelize-auto --host $db_host /
+               --port $db_port /
+               --database $db_name /
+               --user $db_user /
+               --pass $db_pass /
+               --dialect mysql /
+               --output ./TypeScriptModels /
+               --camel /
+               -z
+```
