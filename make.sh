@@ -10,5 +10,5 @@ commandone="sequelize-auto --host $db_host --database $db_name --user $db_user -
 commandtwo="sequelize-auto --host $db_host --database $db_name --user $db_user --pass $db_pass --port $db_port --dialect mysql --output ./TypeScriptModels --camel -z"
 
 docker build -f Dockerfile -t bobbyahines/makemodels:latest .
-docker run -it --rm --name modelmaker -v $PWD:/srv bobbyahines/makemodels:latest $commandone
-docker run -it --rm --name modelmaker -v $PWD:/srv bobbyahines/makemodels:latest $commandtwo
+docker run -it --rm --name modelmaker -v $PWD:/srv bobbyahines/modelmaker:latest $commandone
+docker run -it --rm --name modelmaker -v $PWD:/srv bobbyahines/modelmaker:latest $commandtwo
